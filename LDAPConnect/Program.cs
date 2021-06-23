@@ -6,7 +6,7 @@ using System.Net;
 using System.Text;
 // Sample Code from https://www.medo64.com/2012/10/ldap-authentication-from-c/
 namespace LDAPConnect {
-    class App
+    class Program
     {
         static void Main(string[] args)
         {
