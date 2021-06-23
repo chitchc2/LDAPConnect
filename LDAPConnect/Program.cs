@@ -10,12 +10,12 @@ namespace LDAPConnect {
     {
         static void Main(string[] args)
         {
-            var server = "10.1.10.4";
-            var baseDn = "dc=nfenterprises,dc=com";
+            var server = "ldap.forumsys.com";
+            var baseDn = "dc=example,dc=com";
             var filter = "uid={0}";
 
-            var userName = "chitchcock";
-            var password = "serv1ce!";
+            var userName = "riemann";
+            var password = "password";
 
             var ldap = new LdapServer(server, baseDn, filter);
             var user = ldap.Authenticate(userName, password);
