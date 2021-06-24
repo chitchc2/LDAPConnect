@@ -21,10 +21,11 @@ namespace LDAPConnect {
             var user = ldap.Authenticate(userName, password);
             if (user != null)
             {
-                Console.WriteLine("UID ......: " + user.Uid);
-                Console.WriteLine("Name .....: " + user.Name);
+                Console.WriteLine("       UID: " + user.Uid);
+                Console.WriteLine("      Name: " + user.Name);
                 Console.WriteLine("First name: " + user.FirstName);
-                Console.WriteLine("Last name : " + user.LastName);
+                Console.WriteLine(" Last Name: " + user.LastName);
+                Console.WriteLine("     Email: " + user.Email);
             }
             else
             {

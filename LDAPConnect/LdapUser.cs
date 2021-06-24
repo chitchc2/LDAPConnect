@@ -22,6 +22,8 @@ namespace LDAPConnect
                     case "DISPLAYNAME": if (string.IsNullOrEmpty(this.DisplayName)) { this.DisplayName = values[0].ToString(); }; break;
                     case "GIVENNAME": if (string.IsNullOrEmpty(this.FirstName)) { this.FirstName = values[0].ToString(); }; break;
                     case "SN": if (string.IsNullOrEmpty(this.LastName)) { this.LastName = values[0].ToString(); }; break;
+                    case "EMAIL": if (string.IsNullOrEmpty(this.Email)) { this.Email = values[0].ToString(); }; break;    
+
                 }
             }
         }
@@ -32,6 +34,7 @@ namespace LDAPConnect
         public string DisplayName { get; private set; }
         public string FirstName { get; private set; }
         public string LastName { get; private set; }
+        public string Email { get; private set; }
 
     }
 }
